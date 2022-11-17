@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: bisque;
+    color: #fff;
+}
+
+#page_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  margin: auto;
+}
