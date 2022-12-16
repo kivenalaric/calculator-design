@@ -23,7 +23,7 @@ function appendNumber (number) {
   if (number === '.' && currentOperand.textContent.includes('.')) {
     return
   }
-  (currentOperand.textContent += number).toString
+  number = (currentOperand.textContent += number).toString
   if (
     currentOperand.textContent[0] === '0' &&
      currentOperand.textContent[1] === '0') {
