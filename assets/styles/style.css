@@ -22,7 +22,7 @@ body {
   align-items: center;
   width: 230px;
   height: 450px;
-  border-radius: 10px;
+  border-radius: 20px;
   margin: auto;
   background-color: #000;
 }
@@ -34,19 +34,26 @@ body {
   color: #fff;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-end;
   justify-content: flex-end;
   border-radius: 5px;
   margin-bottom: 10px;
 }
 
-.display .txt {
-  font-size: 30px;
-  padding-right: 5px;
+.display span {
+  margin-right: 5px;
 }
 
-.calc-button-rows-container {
+.current_operand span {
+  font-size: 32px;
+}
+
+.previous_operand span {
+  display: none;
+}
+
+.calc_button_rows_container {
   display: flex;
   flex-direction: column;
   width: 200px;
@@ -64,9 +71,14 @@ button {
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  font-size: 12px;
+  font-size: 20px;
   text-align: center;
   border: none;
+}
+
+button:hover {
+  opacity:0.9;
+  box-shadow: 1px 1px 4px #080808;
 }
 
 button:focus {
@@ -93,13 +105,13 @@ button:focus {
 .number-btn {
   background-color: #353333;
   color: #fff;
-  font-size: 15px;
+  font-size: 22px;
 }
 
-.zero-btn {
+#number_0 {
   width: 89px;
   border-radius: 100px;
-  font-size: 15px;
+  font-size: 22px;
   color: #fff;
   background-color:  #353333;
 }
